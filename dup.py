@@ -8,10 +8,13 @@ import string
 
 
 
-
-
-
 class finding_duplicate():
+	def rewind(self):
+		question1=input("enter question 1: ")
+		question2=input("enter question 2: ")
+		
+		my_classifier=finding_duplicate()
+		my_classifier.test(question1, question2)
 		
 	def test(self, question1, question2):
 		self.question1=question1.lower()
@@ -104,18 +107,15 @@ class finding_duplicate():
 		else:
 			print(0)
 			
+		
+		self.rewind()
 			
 		
-	
-			
-			
+				
 question1=input("enter question 1: ")
 question2=input("enter question 2: ")
 
-
 my_classifier=finding_duplicate()
 
-
 my_classifier.test(question1,question2)
-		
-		
+	
